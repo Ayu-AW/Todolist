@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+
+
+
+    <link rel="stylesheet" href="style.css" />
+    <!--icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--MONTSERRAT FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+</head>
+
+<body>
+    <!-- <div class="td">
+        <h1>Todolist</h1>-->
+    <nav>
+        <div class="container">
+            <a href="#">
+                <h3>TodoList</h3>
+            </a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+
+            </ul>
+            <button id="menu-btn"><span class="material-symbols-outlined" >menu</span></button>
+            <button id="close-btn"><span class="material-symbols-outlined" >close</span></button>
+
+        </div>
+    </nav>
+
+    <section class="sec1">
+        <input id="todo-title" type="text" placeholder="Enter todos" />
+        <input id="date-picker" type="date" />
+        <button class="btn" onclick="addTodo();">Add Todo</button>
+        <div id="todo-list"> </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h1>About</h1>
+        <div class="image"> <img src="./images/todo.jpg" alt=""></div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam quas earum distinctio molestiae nesciunt voluptas aliquid quaerat. Ipsa aliquid ut quis illo illum eligendi quibusdam quisquam tempora praesentium, labore blanditiis
+                culpa nostrum delectus vel expedita consequatur exercitationem voluptas officiis corporis nemo ipsam debitis voluptatum modi! Fugit tempora voluptatem nemo, maiores praesentium eaque quisquam perspiciatis architecto quod animi consequuntur
+                quasi.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut impedit omnis sed nostrum numquam pariatur, nisi eius? Commodi incidunt tempora sunt harum hic! Ipsa alias, nulla perspiciatis earum ducimus adipisci!</p>
+            <div class="read-more-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis, facere maxime, voluptatum amet vero accusantium ut officiis distinctio magnam rerum atque omnis explicabo, eius impedit magni unde reiciendis ratione soluta? Quam,
+                    blanditiis laudantium! Distinctio sed totam consequatur a expedita adipisci. Iste sint iure, distinctio beatae maxime ratione quisquam, at sequi velit alias recusandae dolor eveniet. </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia, nobis voluptatum velit rerum reprehenderit, tempore sapiente doloribus molestiae sit fuga totam, ea officia? Nostrum eius molestiae dolore distinctio ipsa adipisci
+                    repellendus, expedita quia quas? Dolore nemo, voluptates magni, facere velit odio fugiat exercitationem nisi perferendis ab unde, neque molestiae id consequatur. Nihil explicabo consectetur sint ut doloremque nemo molestias?</p>
+            </div>
+            <a class="read-more">Show more</a>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sunt.</p>
+                <form action="https://formspree.io/f/mrgjdqnl" method="post">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <script src="sba.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
