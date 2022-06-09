@@ -1,0 +1,289 @@
+:root {
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    QQ --color-dark: #525252;
+    --color-black: #141415;
+    --color-primary: #f24e1e;
+    --color-primary-light: hsl(14, 89%, 53%, 12%);
+    --color-success: #29f5a6;
+    --color-warning: #ffce31;
+    --color-rgb: rgb(194, 233, 116);
+    --transition: all 300ms ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-white);
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-dark);
+    max-width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--color-black);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 0.6rem;
+}
+
+p {
+    line-height: 1.8;
+}
+
+nav {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+nav h3 {
+    margin-left: 1rem;
+}
+
+nav .container {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 10rem 0 7rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+section h1 {
+    text-align: center;
+    display: block;
+    margin-bottom: 5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.btn,
+#todo-title,
+#date-picker {
+    padding: 1.4rem 3.4rem;
+    font-size: 1.1rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    display: inline-block;
+    margin: 2rem 0;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    box-shadow: 0 2rem 2rem var(--color-primary-light);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+nav {
+    width: 100%;
+    height: 5rem;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--color-light);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav button {
+    display: none;
+}
+
+nav h3 {
+    color: var(--color-primary)
+}
+
+nav .container ul {
+    display: flex;
+    height: 100%;
+}
+
+nav .container ul li a {
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    position: relative;
+    transition: var(--transition);
+}
+
+nav .container ul li a:hover {
+    color: var(--color-primary);
+}
+
+nav .container ul li a.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.sec1 {
+    background: -moz-linear-gradient();
+    background-color: var(--color-rgb);
+    padding: 1em;
+    border-radius: 1em;
+    position: absolute;
+    top: 16%;
+    left: 25%;
+    right: 25%;
+}
+
+.sec1:hover {
+    background-color: var(--color-warning);
+}
+
+.td2 {
+    width: 20%;
+    margin: 0 auto 0 auto;
+}
+
+#todo-list {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+section.about {
+    background: var(--color-light);
+    margin-top: 90%;
+}
+
+section.about.container {
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 5rem;
+}
+
+section.about p {
+    margin-bottom: 1rem;
+}
+
+section.about .container .read-more-content {
+    display: none;
+}
+
+section.contact {
+    background: url("./images/background.jpg") no-repeat center center/cover;
+    padding: 0;
+    max-width: 100vw;
+}
+
+section.contact .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10rem 0 7rem;
+}
+
+section.contact .container {
+    width: 40%;
+}
+
+section.contact .container h1 {
+    margin: 0;
+    color: var(--color-white)
+}
+
+section.contact .container p {
+    text-align: center;
+    color: var(--color-white);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+section.contac form {
+    margin-top: 3rem;
+}
+
+section.contact form input,
+section.contact form textarea {
+    display: block;
+    width: 100%;
+    Margin: 0.5rem 0;
+    padding: 1.6rem;
+    border: 1px solid var(--color-white);
+    background: transparent;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+    color: var(--color-white);
+}
+
+section.contact form .btn {
+    width: 14rem;
+    border: none;
+    background: var(--color-white);
+    color: var(--color-black);
+    margin: 2rem auto 0;
+}
+
+section.contact form .btn:hover {
+    background: var(--color-primary);
+    cursor: pointer;
+    color: var(--color-white);
+}
